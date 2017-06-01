@@ -20,7 +20,7 @@ RUN set -x && \
     gcloud config set core/disable_usage_reporting true && \
     gcloud config set component_manager/disable_update_check true && \
     export CLOUDSDK_CORE_DISABLE_PROMPTS=1 && \
-    gcloud components install app-engine-python app-engine-python-extras app-engine-go cbt bigtable datalab cloud-datastore-emulator gcd-emulator pubsub-emulator emulator-reverse-proxy docker-credential-gcr alpha beta app-engine-java kubectl
+    gcloud components install datalab alpha beta
 
 VOLUME ["/root/.config"]
 
